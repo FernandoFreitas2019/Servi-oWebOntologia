@@ -10,8 +10,8 @@ import 'rxjs/add/operator/map'
 export class AppComponent {
   private sparkqlData = null;
   uri: any;
-  er:any;
-  
+  er: any;
+
   constructor(private http: Http) {
 
 
@@ -38,15 +38,15 @@ export class AppComponent {
       .subscribe(data => {
         console.log(data);
 
-
+        this.er = "";
         for (var i = 0; i < data.results.bindings.length; i++) {
           data.results.bindings[i].type.value = data.results.bindings[i].type.value.replace(this.uri, "");
         }
         this.sparkqlData = data.results.bindings; // 3
       },
-      error => {
-       this.er=error._body; 
-        
-      });
+        error => {
+          this.er = error._body;
+
+        });
   }
 }
