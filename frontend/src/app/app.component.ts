@@ -14,7 +14,6 @@ export class AppComponent {
 
   constructor(private http: Http) {
 
-
   }
 
   sparkql(query) {
@@ -39,10 +38,11 @@ export class AppComponent {
         console.log(data);
 
         this.er = "";
-        for (var i = 0; i < data.results.bindings.length; i++) {
-          data.results.bindings[i].type.value = data.results.bindings[i].type.value.replace(this.uri, "");
+        for (var x = 0; x < data.results.bindings.length; x++) {
+         data.results.bindings[x] = Object.values(data.results.bindings[x]);
         }
-        this.sparkqlData = data.results.bindings; // 3
+
+        this.sparkqlData = data; // 3
       },
         error => {
           this.er = error._body;

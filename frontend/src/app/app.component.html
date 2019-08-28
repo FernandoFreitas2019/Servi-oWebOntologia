@@ -16,7 +16,7 @@
       <div class="col-sm-10">
         <div class="form-group">
           <label for="exampleInputEmail1">Query Sparql</label>
-          <textarea  rows="6" cols="50" type="text" [(ngModel)]="query" class="form-control">
+          <textarea rows="6" cols="50" type="text" [(ngModel)]="query" class="form-control">
           </textarea>
         </div>
       </div>
@@ -26,26 +26,27 @@
           class="btn btn-primary">Executar</button>
 
       </div>
-     <h4 style="color: red"> {{er}}</h4>
+      <h4 style="color: red"> {{er}}</h4>
     </div>
   </div>
   <div class="jumbotron">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Primeiro</th>
+    <div class="table-responsive">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" *ngFor="let f of sparkqlData.head.vars">{{f}}</th>
 
 
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let i of sparkqlData">
-          <td> {{i.type.value}}</td>
-        </tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of sparkqlData.results.bindings">
+            <td *ngFor="let z of i">{{z.value}}</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   </div>
-
 </div>
