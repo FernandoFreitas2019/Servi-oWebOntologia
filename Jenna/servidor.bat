@@ -1,0 +1,1 @@
+fuseki-server --file=Teste.owl /ds

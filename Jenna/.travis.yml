@@ -1,0 +1,69 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+  # using major version aliases
+  # aliased to 5.3.29
+  - 5.3
+  # aliased to a recent 5.4.x version
+  - 5.4
+  # aliased to a recent 5.5.x version
+  - 5.5
+  # aliased to a recent 5.6.x version
+  - 5.6
+  # aliased to a recent 7.x version
+
+  - 7.0
+
+  - 7.1
+
+  - 7.2
+
+  - 7.3
+
+  - 7.4
+  # aliased to a recent hhvm version
+  - hhvm
+
+services:
+  - docker
+
+# optionally specify a list of environments, for example to test different RDBMS
+env:
+#  - DB=mysql
+#  - DB=pgsql
+
+# optionally set up exclutions and allowed failures in the matrix
+matrix:
+  exclude:
+    - php: hhvm
+#      env: DB=pgsql  # PDO driver for pgsql is unsupported by HHVM (3rd party install for support)
+  allow_failures:
+    - php: 5.3
+    - php: 5.4
+    - php: 5.5
+    - php: 5.6
+    - php: 7.0 #Warnings...
+    - php: 7.4
+    - php: hhvm
+
+before_install:
+  - docker pull bordercloud/tft-virtuoso7-stable
+
+# execute any number of scripts before the test run, custom env's are available as variables
+before_script: composer install
+#  - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
+#  - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
+#  - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
+
+# omitting "script:" will default to phpunit
+# use the $DB env variable to determine the phpunit.xml to use
+script:
+  -   docker run --privileged --name instance.tft_virtuoso7_stable -h tft_virtuoso7_stable -d bordercloud/tft-virtuoso7-stable #http://172.17.0.2:8890/sparql/
+  -   sleep 10
+  -   vendor/phpunit/phpunit/phpunit --configuration phpunit.xml --coverage-text
+
+# configure notifications (email, IRC, campfire etc)
+#notifications:
+#  irc: "irc.freenode.org#yourfavouriteroomfortravis"

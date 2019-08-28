@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fernandofreitas/ontologies/2019/7/untitled-ontology-41"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fernandofreitas/ontologies/2019/7/untitled-ontology-41">
+    <Prefix name="" IRI="http://www.semanticweb.org/fernandofreitas/ontologies/2019/7/untitled-ontology-41#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-41" IRI="http://www.semanticweb.org/fernandofreitas/ontologies/2019/7/untitled-ontology-41#"/>
+    <Declaration>
+        <Class IRI="#ValorAceleracao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#acelerometro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ambiente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atividades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atuador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#balistocardiogram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#incidente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wifi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AssistindoTv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eFilho"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eIrmao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ePai"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eQueda"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaBanheiro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaComAcelerometro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaDormindo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaElevador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaQuarto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaRampa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaSala"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaTomandoBanho"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fazendoNecessidadesPessoais"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#levantouCama"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#membroFamilia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#escuro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#indiceGravidade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pisoMolhado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valorAceleracao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcelerometroMoto1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BanheiroMasculino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camera_Entrada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quarto"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ValorAceleracao"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#acelerometro"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#valorAceleracao"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#acelerometro"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#balistocardiogram"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#camera"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wifi"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ambiente"/>
+        <NamedIndividual IRI="#BanheiroMasculino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sensor"/>
+        <NamedIndividual IRI="#Camera_Entrada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pessoa"/>
+        <NamedIndividual IRI="#Joao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pessoa"/>
+        <NamedIndividual IRI="#Jose"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaComAcelerometro"/>
+        <NamedIndividual IRI="#Joao"/>
+        <NamedIndividual IRI="#AcelerometroMoto1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#levantouCama"/>
+        <NamedIndividual IRI="#Joao"/>
+        <NamedIndividual IRI="#Quarto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eIrmao"/>
+        <NamedIndividual IRI="#Jose"/>
+        <NamedIndividual IRI="#Joao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaTomandoBanho"/>
+        <NamedIndividual IRI="#Jose"/>
+        <NamedIndividual IRI="#BanheiroMasculino"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorAceleracao"/>
+        <NamedIndividual IRI="#AcelerometroMoto1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idade"/>
+        <NamedIndividual IRI="#Joao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idade"/>
+        <NamedIndividual IRI="#Jose"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#escuro"/>
+        <NamedIndividual IRI="#Quarto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#AssistindoTv"/>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#eFilho"/>
+        <ObjectProperty IRI="#membroFamilia"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#eIrmao"/>
+        <ObjectProperty IRI="#membroFamilia"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ePai"/>
+        <ObjectProperty IRI="#membroFamilia"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaBanheiro"/>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaDormindo"/>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaElevador"/>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaQuarto"/>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaRampa"/>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaSala"/>
+        <ObjectProperty IRI="#estaAmbiente"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaTomandoBanho"/>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fazendoNecessidadesPessoais"/>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#levantouCama"/>
+        <ObjectProperty IRI="#pessoaAtividades"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eFilho"/>
+        <ObjectProperty IRI="#ePai"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#eIrmao"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#eFilho"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#ePai"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#AssistindoTv"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eFilho"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eIrmao"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ePai"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaBanheiro"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaComAcelerometro"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaDormindo"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaElevador"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaQuarto"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaRampa"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaSala"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaTomandoBanho"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fazendoNecessidadesPessoais"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AssistindoTv"/>
+        <Class IRI="#atividades"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eFilho"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eIrmao"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ePai"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaBanheiro"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaComAcelerometro"/>
+        <Class IRI="#acelerometro"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaDormindo"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaElevador"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaQuarto"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaRampa"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaSala"/>
+        <Class IRI="#ambiente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaTomandoBanho"/>
+        <Class IRI="#atividades"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fazendoNecessidadesPessoais"/>
+        <Class IRI="#atividades"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#AssistindoTv"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estaSala"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#estaDormindo"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estaQuarto"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#estaTomandoBanho"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estaBanheiro"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#fazendoNecessidadesPessoais"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estaBanheiro"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#levantouCama"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estaQuarto"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#escuro"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#escuro"/>
+        <Class IRI="#ambiente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="#ambiente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idade"/>
+        <Class IRI="#pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#indiceGravidade"/>
+        <Class IRI="#incidente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pisoMolhado"/>
+        <Class IRI="#ambiente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valorAceleracao"/>
+        <Class IRI="#acelerometro"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#escuro"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horario"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idade"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indiceGravidade"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pisoMolhado"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valorAceleracao"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

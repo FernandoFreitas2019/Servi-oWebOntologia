@@ -1,0 +1,1360 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyOficial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyOficial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#oficial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyPerson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#rightLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#rightLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withoutGum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withoutGum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#wrongLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#wrongLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#ativado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#ativado"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#high -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#high">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#oficial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#oficial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#cam1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#cam1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <identifyOficial rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p2"/>
+        <identifySuspect rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p1"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#cam2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#cam2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <identifyPerson rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p3"/>
+        <identifySuspect rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p4"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#high -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#high">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#high"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#low"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+        <hasCriticality rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium"/>
+        <hasCriticality rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#oficial"/>
+        <hasCriticality rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#person"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identified"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+        <hasCriticality rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#raiox1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#raiox1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+        <withGum rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p1"/>
+        <withGum rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+        <ativado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ativado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir1-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir1-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local1"/>
+        <ativado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ativado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#sir3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator"/>
+        <isPartofLocal rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#criticality"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Si">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Si"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Actuator"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Si"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#ativado"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Si"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyPerson"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#suspect"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#medium"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#irrelevant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyOficial"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyOficial"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyPerson"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#withGum"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifySuspect"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#urgent"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#hasCriticality"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#local"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#identifyOficial"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#oficial"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#isPartofLocal"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tfeijo/ontologies/2019/7/untitled-ontology-11#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
