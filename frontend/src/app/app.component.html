@@ -1,17 +1,36 @@
 <div class="container">
   <div class="jumbotron">
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">prefix</th>
+          <th scope="col">URL</th>
+          <th scope="col">
+            <button type="button" style="margin-top: 23px" class="btn btn-success"
+              (click)="criaNovoPrefixo()">+</button>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let y of listaPrefixos; let i = index">
+          <td style="width: 100px">
+            <input type="text" [(ngModel)]="y.uri" class="form-control">
+          </td>
+          <td>
+            <input type="text" [(ngModel)]="y.url" class="form-control">
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger" (click)="remove(i)">-</button>
+          </td>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <label for="exampleInputEmail1">uri</label>
-          <input type="text" [(ngModel)]="uri" class="form-control">
+        </tr>
+      </tbody>
+    </table>
 
-        </div>
-      </div>
 
-    </div>
+
     <div class="row">
       <div class="col-sm-10">
         <div class="form-group">
@@ -22,8 +41,7 @@
       </div>
       <div class="col-sm-2">
 
-        <button type="button" style="margin-top: 23px" (click)="sparkql(query)"
-          class="btn btn-primary">Executar</button>
+        <button type="button" style="margin-top: 23px" (click)="sparkql()" class="btn btn-primary">Executar</button>
 
       </div>
       <h4 style="color: red"> {{er}}</h4>
@@ -31,22 +49,26 @@
   </div>
   <div class="jumbotron">
     <div class="table-responsive">
-
       <table class="table">
         <thead>
           <tr>
-            <th scope="col" *ngFor="let f of sparkqlData.head.vars">{{f}}</th>
+            <th scope="col" *ngFor="let f of sparkqlData.rows.variables">{{f}}</th>
 
 
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let i of sparkqlData.results.bindings">
-            <td *ngFor="let z of i">{{z.value}}</td>
+          <tr *ngFor="let i of sparkqlData.rows.rows">
+            <td *ngFor="let c of i">
+              {{c}}
+            </td>
+
           </tr>
 
         </tbody>
       </table>
+
+
     </div>
   </div>
 </div>
