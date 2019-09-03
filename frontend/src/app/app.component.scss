@@ -1,0 +1,78 @@
+
+.inputFileClass
+{
+  background-color: rgb(232,232,232);
+}
+@media screen and (min-width: 1000px) {
+  .inputFileClass
+  {
+      width: 900px!important;
+
+  }
+  .progress{
+    width: 755px;
+  }
+}
+
+
+.modal-content
+{
+    margin-top: 180px;
+}
+@media screen and (max-width: 800px) {
+  .modal-content
+  {
+      margin-top: -490px;
+      margin-left: -10px;
+  } 
+  
+}
+.btn-scan 
+{
+  background-color:#548abc;
+  border-radius: 42px!important;
+  text-indent:-8px;
+  border:1px solid #548abc;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  font-style:normal;
+  height:65px;
+  width:65px;
+  text-decoration:none;
+  text-align:center;
+}
+.btn-scan:hover 
+{
+  background-color:#579ad4;
+}
+.btn-scan:active 
+{
+  position:relative;
+  top:1px;
+}
+.my-drop-zone 
+{
+   border: dotted 3px lightgray;
+   height: 3.3em;
+   font-size: 25px;
+   margin-bottom: 0.5em;
+   color: rgb(211,211,211); 
+   text-align: center; 
+   line-height: 2.8em;
+}
+.nv-file-over 
+{ 
+    border: dotted 3px red; 
+}
+.another-file-over-class 
+{ 
+  border: dotted 3px green; 
+}
+.messageText
+{
+  color: red; 
+  margin-top: 5px;
+}

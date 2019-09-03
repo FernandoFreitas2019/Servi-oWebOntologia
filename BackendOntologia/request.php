@@ -6,7 +6,7 @@ $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 use BorderCloud\SPARQL\SparqlClient;
 require_once ('vendor/autoload.php');
-$endpoint = "http://localhost:3030/ds/query";
+$endpoint = "http://localhost:{$request->porta}/ds/query";
 
 if($request)
 {	

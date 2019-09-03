@@ -4,6 +4,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { NgxUploaderModule } from 'ngx-uploader';
+import { ProgressbarModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule 
+    ProgressbarModule.forRoot(),
+    FormsModule,
+    NgxUploaderModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

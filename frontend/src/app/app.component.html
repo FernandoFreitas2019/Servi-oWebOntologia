@@ -1,6 +1,23 @@
 <div class="container">
   <div class="jumbotron">
 
+    <div class="row">
+
+      <div class="col-xl-12  col-md-12 col-sm-12 inputFileClass">
+        <label class="text-default">Selecione um arquivo</label>
+        <div class="input-group">
+
+          <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)"
+            [uploadInput]="uploadInput">
+
+          <div class="progress-content" *ngIf="files[0]">
+            <progressbar [value]="files[0]?.progress?.data?.percentage" [striped]="true" [animate]="true">
+              {{files[0]?.progress?.data?.percentage}}% - {{ files[0].progress?.data?.speedHuman }}</progressbar>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <table class="table">
       <thead>
         <tr>
@@ -41,7 +58,8 @@
       </div>
       <div class="col-sm-2">
 
-        <button type="button" style="margin-top: 23px" (click)="sparkql()" class="btn btn-primary">Executar</button>
+        <button type="button" style="margin-top: 23px" (click)="sparkql()"
+          [disabled]="!enableButoon" class="btn btn-primary">Executar</button>
 
       </div>
       <h4 style="color: red"> {{er}}</h4>
